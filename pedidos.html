@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus pedidos — OPIUM STORE</title>
+  <meta name="description" content="Resumo dos seus pedidos e carrinho na OPIUM STORE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aviso">Frete grátis acima de R$ 350 • Coleção MUSIC nova disponível</div>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">OP<span>IUM</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="busca.html">Busca</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="pedidos.html" class="ativo">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h2>Meus pedidos</h2>
+        <a href="produtos.html">Continuar comprando →</a>
+      </div>
+
+      <form action="pedidos.html" method="post">
+        <div class="tabela-wrap">
+          <table class="pedidos">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Qtd.</th>
+                <th>Subtotal</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="produto-cel">
+                  <img src="img/disco1.png" alt="Whole Lotta Red" />
+                  <div>
+                    <strong>Whole Lotta Red</strong><br />
+                    <span class="card-tag">Vinil duplo (Red)</span>
+                  </div>
+                </td>
+                <td>R$ 199,90</td>
+                <td><input type="number" name="qtd1" value="1" min="0" max="10" /></td>
+                <td>R$ 199,90</td>
+                <td>Em separação</td>
+              </tr>
+              <tr>
+                <td class="produto-cel">
+                  <img src="roupa1.png" alt="Hoodie OPIUM Black" />
+                  <div>
+                    <strong>Hoodie OPIUM Black</strong><br />
+                    <span class="card-tag">Tamanho M</span>
+                  </div>
+                </td>
+                <td>R$ 349,90</td>
+                <td><input type="number" name="qtd2" value="2" min="0" max="10" /></td>
+                <td>R$ 699,80</td>
+                <td>Aguardando pagamento</td>
+              </tr>
+              <tr>
+                <td class="produto-cel">
+                  <img src="roupa2.png" alt="Camiseta RAGE" />
+                  <div>
+                    <strong>Camiseta RAGE</strong><br />
+                    <span class="card-tag">Tamanho G</span>
+                  </div>
+                </td>
+                <td>R$ 159,90</td>
+                <td><input type="number" name="qtd3" value="1" min="0" max="10" /></td>
+                <td>R$ 159,90</td>
+                <td>Enviado</td>
+              </tr>
+              <tr class="total-linha">
+                <td colspan="3">Total do pedido</td>
+                <td colspan="2">R$ 1.059,60</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="form-wrap" style="max-width:none;margin-top:24px">
+          <div class="form-linha">
+            <div class="campo">
+              <label for="cupom">Cupom de desconto</label>
+              <input type="text" id="cupom" name="cupom" placeholder="Digite seu cupom" />
+            </div>
+            <div class="campo">
+              <label for="cep">CEP para frete</label>
+              <input type="text" id="cep" name="cep" placeholder="00000-000" />
+            </div>
+            <div class="campo">
+              <label for="pagamento">Forma de pagamento</label>
+              <select id="pagamento" name="pagamento">
+                <option>Cartão de crédito</option>
+                <option>Pix</option>
+                <option>Boleto</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="pedido-acoes">
+          <button type="submit" name="acao" value="atualizar" class="btn btn-vazado">Atualizar pedido</button>
+          <button type="submit" name="acao" value="finalizar" class="btn">Finalizar compra</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size:22px;margin-bottom:12px">OP<span>IUM</span></div>
+          <p>Loja fictícia para trabalho escolar inspirada na estética Playboi Carti / OPIUM.</p>
+        </div>
+        <div>
+          <h4>Loja</h4>
+          <a href="produtos.html">Produtos</a>
+          <a href="busca.html">Busca</a>
+          <a href="pedidos.html">Meus pedidos</a>
+        </div>
+        <div>
+          <h4>Conta</h4>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="contato.html">Contato</a>
+          <a href="quem-somos.html">Quem somos</a>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">Spotify</a>
+        </div>
+      </div>
+      <div class="footer-base">© 2026 OPIUM STORE — Projeto escolar. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+</html>

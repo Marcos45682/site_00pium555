@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whole Lotta Red — OPIUM STORE</title>
+  <meta name="description" content="Vinil Whole Lotta Red — edição OPIUM x Playboi Carti." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aviso">Frete grátis acima de R$ 350 • Coleção MUSIC nova disponível</div>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">OP<span>IUM</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="busca.html">Busca</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="secao">
+    <div class="container">
+      <p class="resultado-info"><a href="produtos.html" style="color:var(--carmim)">Produtos</a> / Whole Lotta Red</p>
+
+      <div class="produto">
+        <div>
+          <img src="img/disco1.png" alt="Capa do vinil Whole Lotta Red" class="produto-foto" />
+          <div class="miniatura">
+            <img src="img/disco1.png" alt="Miniatura frente" />
+            <img src="img/disco2.png" alt="Miniatura verso" />
+            <img src="img/disco3.png" alt="Miniatura encarte" />
+            <img src="img/hero.png" alt="Miniatura ambiente" />
+          </div>
+        </div>
+
+        <div class="produto-info">
+          <span class="card-tag">Vinil • Disco • Edição limitada</span>
+          <h1>Whole Lotta Red</h1>
+          <div class="preco">R$ 199,90</div>
+          <p class="desc">Vinil duplo da era vampírica da OPIUM. Prensagem em cor exclusiva, capa gatefold e encarte colecionável. Um item essencial para qualquer fã de Playboi Carti.</p>
+
+          <form>
+            <div class="campo">
+              <label for="formato">Formato</label>
+              <select id="formato" name="formato">
+                <option>Vinil duplo (Red)</option>
+                <option>Vinil preto</option>
+                <option>CD</option>
+              </select>
+            </div>
+            <div class="campo" style="max-width:160px">
+              <label for="qtd">Quantidade</label>
+              <input type="number" id="qtd" name="qtd" value="1" min="1" max="10" />
+            </div>
+            <div class="opcoes">
+              <a href="pedidos.html" class="btn">Adicionar ao pedido</a>
+              <a href="produtos.html" class="btn btn-vazado">Voltar</a>
+            </div>
+          </form>
+
+          <div class="valores" style="margin-top:24px;grid-template-columns:1fr 1fr">
+            <div class="valor"><h3>Entrega</h3><p>Enviamos para todo o Brasil em até 7 dias úteis.</p></div>
+            <div class="valor"><h3>Garantia</h3><p>Troca garantida em caso de defeito de prensagem.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size:22px;margin-bottom:12px">OP<span>IUM</span></div>
+          <p>Loja fictícia para trabalho escolar inspirada na estética Playboi Carti / OPIUM.</p>
+        </div>
+        <div>
+          <h4>Loja</h4>
+          <a href="produtos.html">Produtos</a>
+          <a href="busca.html">Busca</a>
+          <a href="pedidos.html">Meus pedidos</a>
+        </div>
+        <div>
+          <h4>Conta</h4>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="contato.html">Contato</a>
+          <a href="quem-somos.html">Quem somos</a>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">Spotify</a>
+        </div>
+      </div>
+      <div class="footer-base">© 2026 OPIUM STORE — Projeto escolar. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+</html>

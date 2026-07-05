@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busca — OPIUM STORE</title>
+  <meta name="description" content="Resultados da busca de produtos na OPIUM STORE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aviso">Frete grátis acima de R$ 350 • Coleção MUSIC nova disponível</div>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">OP<span>IUM</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="busca.html" class="ativo">Busca</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h2>Busca de produtos</h2>
+      </div>
+
+      <!-- Barra de busca -->
+      <form class="busca-barra" action="busca.html" method="get">
+        <input type="search" name="q" placeholder="Buscar por vinil, camiseta, moletom..." value="whole lotta red" aria-label="Buscar produtos" />
+        <select name="cat" aria-label="Categoria" style="background:var(--preto-2);border:1px solid var(--borda);color:var(--branco);padding:0 14px">
+          <option value="">Todas categorias</option>
+          <option value="disco">Discos</option>
+          <option value="roupa">Roupas</option>
+        </select>
+        <button type="submit" class="btn">Buscar</button>
+      </form>
+
+      <p class="resultado-info">Exibindo <strong>3 resultados</strong> para: <span style="color:var(--branco)">"whole lotta red"</span></p>
+
+      <div class="grade">
+        <article class="card">
+          <a href="produto.html" class="card-img"><img src="img/disco1.png" alt="Vinil Whole Lotta Red" /></a>
+          <div class="card-corpo">
+            <span class="card-tag">Vinil • Disco</span>
+            <h3>Whole Lotta Red</h3>
+            <span class="preco">R$ 199,90</span>
+            <a href="produto.html" class="btn">Ver produto</a>
+          </div>
+        </article>
+        <article class="card">
+          <a href="produto.html" class="card-img"><img src="img/roupa2.png" alt="Camiseta Whole Lotta Red" /></a>
+          <div class="card-corpo">
+            <span class="card-tag">Roupa • Camiseta</span>
+            <h3>Camiseta WLR Tour</h3>
+            <span class="preco">R$ 159,90</span>
+            <a href="produto.html" class="btn">Ver produto</a>
+          </div>
+        </article>
+        <article class="card">
+          <a href="produto.html" class="card-img"><img src="img/disco1.png" alt="Box Whole Lotta Red" /></a>
+          <div class="card-corpo">
+            <span class="card-tag">Vinil • Box</span>
+            <h3>Box WLR Colecionador</h3>
+            <span class="preco">R$ 499,90</span>
+            <a href="produto.html" class="btn">Ver produto</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="aviso-msg">Digite um termo e clique em "Buscar" para filtrar os produtos da loja.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size:22px;margin-bottom:12px">OP<span>IUM</span></div>
+          <p>Loja fictícia para trabalho escolar inspirada na estética Playboi Carti / OPIUM.</p>
+        </div>
+        <div>
+          <h4>Loja</h4>
+          <a href="produtos.html">Produtos</a>
+          <a href="busca.html">Busca</a>
+          <a href="pedidos.html">Meus pedidos</a>
+        </div>
+        <div>
+          <h4>Conta</h4>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="contato.html">Contato</a>
+          <a href="quem-somos.html">Quem somos</a>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">Spotify</a>
+        </div>
+      </div>
+      <div class="footer-base">© 2026 OPIUM STORE — Projeto escolar. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+</html>

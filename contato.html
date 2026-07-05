@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — OPIUM STORE</title>
+  <meta name="description" content="Fale com a OPIUM STORE pelo formulário de contato." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aviso">Frete grátis acima de R$ 350 • Coleção MUSIC nova disponível</div>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">OP<span>IUM</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="busca.html">Busca</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h2>Fale conosco</h2>
+      </div>
+
+      <div class="form-wrap">
+        <p style="color:var(--cinza);margin-bottom:24px">Dúvidas sobre pedidos, produtos ou parcerias? Preencha o formulário abaixo.</p>
+        <form action="contato.html" method="post">
+          <div class="form-linha">
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="voce@email.com" required />
+            </div>
+          </div>
+          <div class="form-linha">
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option>Dúvida sobre pedido</option>
+                <option>Produto</option>
+                <option>Parceria</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+            </div>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="btn" style="width:100%">Enviar mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size:22px;margin-bottom:12px">OP<span>IUM</span></div>
+          <p>Loja fictícia para trabalho escolar inspirada na estética Playboi Carti / OPIUM.</p>
+        </div>
+        <div>
+          <h4>Loja</h4>
+          <a href="produtos.html">Produtos</a>
+          <a href="busca.html">Busca</a>
+          <a href="pedidos.html">Meus pedidos</a>
+        </div>
+        <div>
+          <h4>Conta</h4>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="contato.html">Contato</a>
+          <a href="quem-somos.html">Quem somos</a>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">Spotify</a>
+        </div>
+      </div>
+      <div class="footer-base">© 2026 OPIUM STORE — Projeto escolar. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+</html>
